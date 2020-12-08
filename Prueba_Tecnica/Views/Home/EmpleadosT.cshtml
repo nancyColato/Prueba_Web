@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "EmpleadosT";
+    ViewData["datos"] = "Tienda";
+}
+
+
+<div class="col-12">
+
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h1 class="text-center align-content-end">Empleados </h1>
+        </div>
+
+        <div class="card-body">
+            <table class="table table-responsive-lg table-active table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Nombre 
+                        </th>
+                        <th>
+                           Fecha Nacimiento
+                        </th>
+                        <th>
+                           Dui
+                        </th>
+                        <th>
+                            Telefono
+                        </th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <tr>
+                            <td>
+                                Andres Morazan
+                            </td>
+                            <td>
+                                12/02/1993
+                            </td>
+                            <td>
+                                00000000-0
+                            </td>
+                            <td>
+                               1234-6245    
+                            </td>
+                           
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

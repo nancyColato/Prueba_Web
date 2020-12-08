@@ -1,0 +1,53 @@
+﻿
+@{
+  ViewData["Title"] = "CategoriasM";
+  ViewData["datos"] = "Menu";
+}
+
+
+<div class="col-12">
+
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h1 class="text-center align-content-end">Productos</h1>
+        </div>
+
+        <div class="card-body">
+            <table class="table table-responsive-lg table-active table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            N
+                        </th>
+                        <th>
+                            Nombre Categoria
+                        </th>
+                        <th>
+                           Descripcion
+                        </th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        <tr>
+                            <td>
+                                @i;
+                            </td>
+                            <td>
+                               Belleza
+                            </td>
+                            <td>
+                                Cuidado de la piel y otros para mujer
+                            </td>
+                           
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
